@@ -49,6 +49,7 @@ input[type="text"],input[type="password"]{
     padding: 4px;
     font-family: "Cultive Mono";
     letter-spacing: 2px;
+    flex-wrap: wrap;
 }
 
 
