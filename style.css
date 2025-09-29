@@ -43,13 +43,13 @@ main{
 
 
 input[type="text"],input[type="password"]{
-    min-width: 20px;
     border: 2px dashed black;
     background-color: #d9d9d9;
-    margin: 10px;
+    margin: 5px;
     padding: 4px;
     font-family: "Cultive Mono";
     letter-spacing: 2px;
+    font-size: 12px;
 }
 
 
@@ -97,6 +97,8 @@ input[type="button"]{
 
 
 .typewriter{
+    width:185px;
+    height: 118px;
     margin-top: 0;
     width: 513px;
     height: 513px;
@@ -115,4 +117,70 @@ footer{
     text-align: center;
     height: 100px;
     padding: 20px;
+}
+
+@media(900px< width){
+
+    html{
+        font-size: 1em;
+    }
+
+    body{
+        background-size: cover;
+        background-color: #1a1a1a;
+    }
+
+    .logo{
+        height: 100px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        margin: 30px;
+    }
+    .paper{
+        margin-top: 50px;
+        width: 450px;
+        height: 450px;
+        padding: 20px;
+    }
+
+    form{
+        display: block;
+        padding: 20px 0px;
+    }
+
+    input[type="text"],input[type="password"]{
+        font-size: 1em;
+        width: 90%;
+        padding: 10px;
+    }
+
+    label{
+        font-size: 1em;
+    }
+
+    input[type="button"]{
+        font-size: 1em;
+        margin: 20px 70px;
+    }
+
+    .quote{
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    .spacing{
+        height: 280px;
+    }
+
+    .typewriter{
+        content: url(typewriter2.png);
+        width: 1218px;
+        height: 746px;
+        position: absolute;
+        bottom: 140px;
+    }
+    footer{
+        z-index: 1000 !important;
+    }
 }
