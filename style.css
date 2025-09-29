@@ -1,0 +1,117 @@
+
+html{
+    font-size: 12px;
+}
+
+body{
+    background-image: url(papers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    margin: 70px;
+}
+
+h2,h3{
+    text-align: center;
+    color: #393939;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne Mono";
+}
+
+.paper{
+    background-color: #d9d9d9;
+    height: 329px;
+    width: 190px;
+    padding: 10px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+
+input[type="text"],input[type="password"]{
+    border: 2px dashed black;
+    background-color: #d9d9d9;
+    margin: 5px;
+    padding: 5px;
+    font-family: "Cultive Mono";
+    letter-spacing: 2px;
+}
+
+
+.forgot{
+    text-align: end;
+    margin-top: 0;
+    cursor: pointer;
+    font-family: "Cultive Mono";
+    letter-spacing: 2px;
+}
+
+.forgot:hover{
+    text-decoration: underline;
+}
+
+label{
+    font-family: "Cultive Mono";
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+label:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type="button"]{
+    border-style: none;
+    background-color: #615447;
+    color: white;
+    margin: 20px 9px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Cultive Mono";
+    letter-spacing: 2px;
+}
+
+
+.quote{
+    margin-top: 0;
+    text-align: center;
+    font-family: "Lavishly Yours";
+    font-size: large;
+}
+
+
+.typewriter{
+    margin-top: 0;
+    width: 513px;
+    height: 513px;
+    position: relative;
+    bottom: 195px;
+    
+}
+
+footer{
+    background-color: #1a1a1a;
+    color: #615447;
+    text-shadow: 0 0 10px black;
+    font-family:"Cultive Mono";
+    font-size: 20px;
+    line-height: 1px;
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+}
