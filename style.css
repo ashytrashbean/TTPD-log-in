@@ -4,6 +4,7 @@ html{
 }
 
 body{
+    background-color: #1a1a1a;
     background-image: url(papers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,9 +103,13 @@ input[type="button"]{
     margin-top: 0;
     width: 513px;
     height: 513px;
-    position: relative;
-    bottom: 195px;
+    position: absolute;
+    bottom: 120px;
     
+}
+
+.spacing{
+    height: 300px;
 }
 
 footer{
