@@ -38,13 +38,6 @@ main{
     width: 50%;
 }
 
-/* .space{
-    padding: 0 40%;
-    justify-self: center;
-    object-fit: contain;
-} */
-
-
 .paper{
     display: flex;
     flex-direction: column;
@@ -149,3 +142,55 @@ footer{
     padding: 20px;
 }
 
+@media (750px < width){
+
+    html{
+        font-size: 1em;
+    }
+
+    .logo{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 30px;
+    width: 100px;
+    }
+
+
+    main{
+        padding: 0 20%;
+    }
+
+    .paper{
+        margin: 40px 0 0 0;
+        height: 400px;
+        width: 51%;
+    }
+
+    form{
+        gap: 12px;
+    }
+    input[type="text"],input[type="password"]{
+        font-size: 1em;
+    }
+
+    .btn{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    input[type="button"]{
+        font-size: 1em;
+    }
+
+    .quote{
+        font-size: 2em;
+    }
+
+
+    .typewriter{
+        position: relative;
+        content: url(typewriter2.png);
+        bottom: 0
+    }
+}
