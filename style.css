@@ -142,11 +142,42 @@ footer{
     padding: 20px;
 }
 
-@media (750px < width){
 
-    html{
-        font-size: 1em;
+
+@media (600px < width){
+    html{font-size: 1em;}
+    .logo{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 30px;
+    width: 100px;
     }
+
+    .paper{
+    margin: 0;
+    height: 400px;
+    width: 51%;
+    position: relative;
+    top: 35px
+    }
+
+    input[type="text"],input[type="password"]{ font-size: 1em; }
+
+    .btn{
+    flex-direction: row;
+    align-items: center;
+    }
+
+    input[type="button"]{font-size: 1em; }
+
+    .quote{font-size: 2em; }
+}
+
+
+@media (1010px < width){
+
+    html{font-size: 1em;}
 
     .logo{
     position: absolute;
@@ -157,35 +188,28 @@ footer{
     }
 
 
-    main{
-        padding: 0 20%;
-    }
+    main{ padding: 0 20%; }
 
     .paper{
-        margin: 40px 0 0 0;
+        margin: 0;
         height: 400px;
         width: 51%;
+        position: relative;
+        top: 57px
     }
 
-    form{
-        gap: 12px;
-    }
-    input[type="text"],input[type="password"]{
-        font-size: 1em;
-    }
+    form{ gap: 12px; }
+
+    input[type="text"],input[type="password"]{ font-size: 1em; }
 
     .btn{
         flex-direction: row;
         align-items: center;
     }
 
-    input[type="button"]{
-        font-size: 1em;
-    }
+    input[type="button"]{font-size: 1em; }
 
-    .quote{
-        font-size: 2em;
-    }
+    .quote{font-size: 2em; }
 
 
     .typewriter{
