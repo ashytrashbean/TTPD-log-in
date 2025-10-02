@@ -15,9 +15,7 @@ body{
     backdrop-filter: blur(5px);
 }
 
-.logo{
-    margin: 70px;
-}
+
 
 h2,h3{
     text-align: center;
@@ -31,17 +29,31 @@ main{
     justify-content: center;
     align-items: center;
     font-family: "Syne Mono";
+    flex-wrap: wrap;
+    padding: 1% 20%;
 }
-
+.logo{
+    margin: 70px;
+}
 .paper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: #d9d9d9;
-    height: 329px;
-    width: 190px;
     padding: 10px;
-    margin-bottom: 0;
+    margin: 0 30%;
     z-index: 1;
+    object-fit: contain;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
 input[type="text"],input[type="password"]{
     border: 2px dashed black;
@@ -81,7 +93,7 @@ input[type="button"]{
     border-style: none;
     background-color: #615447;
     color: white;
-    margin: 20px 9px;
+    margin: 5px;
     padding: 5px 10px;
     cursor: pointer;
     font-family: "Cultive Mono";
@@ -98,14 +110,11 @@ input[type="button"]{
 
 
 .typewriter{
-    width:185px;
-    height: 118px;
     margin-top: 0;
-    width: 513px;
-    height: 513px;
-    position: absolute;
-    bottom: 120px;
-    
+    /* width: 100%; */
+    position: relative;
+    bottom: 20px;
+    object-fit: contain;
 }
 
 .spacing{
@@ -144,7 +153,6 @@ footer{
     }
     .paper{
         margin-top: 50px;
-        width: 450px;
         height: 450px;
         padding: 20px;
     }
@@ -180,8 +188,6 @@ footer{
 
     .typewriter{
         content: url(typewriter2.png);
-        width: 1218px;
-        height: 746px;
         position: absolute;
         bottom: 140px;
     }
