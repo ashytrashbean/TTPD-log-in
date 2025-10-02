@@ -72,6 +72,9 @@ input[type="text"],input[type="password"]{
 
 
 .forgot{
+    justify-self: flex-end;
+    align-self: flex-end;
+
     text-align: end;
     margin-top: 0;
     cursor: pointer;
@@ -83,10 +86,14 @@ input[type="text"],input[type="password"]{
     text-decoration: underline;
 }
 
+.forgot{ text-align: end;}
+
 label{
     font-family: "Cultive Mono";
     letter-spacing: 2px;
     font-size: 12px;
+    justify-self: flex-start;
+    align-self: flex-start;
 }
 
 label:hover{
@@ -154,15 +161,22 @@ footer{
     width: 100px;
     }
 
+    main{ padding: 0 10%;}
+
     .paper{
     margin: 0;
     height: 400px;
-    width: 51%;
+    width: 49%;
     position: relative;
-    top: 35px
+    top: 35px;
+    padding:15px;
     }
 
     input[type="text"],input[type="password"]{ font-size: 1em; }
+
+    .forgot, lable{flex-wrap: nowrap;}
+
+    label{ font-size: 1em;}
 
     .btn{
     flex-direction: row;
@@ -172,12 +186,17 @@ footer{
     input[type="button"]{font-size: 1em; }
 
     .quote{font-size: 2em; }
+
+    .typewriter{
+    bottom: 0;
+    content: url(typewriter2.png);
+    }
 }
 
 
-@media (1010px < width){
+@media (900px < width){
 
-    html{font-size: 1em;}
+    html{font-size: 1,5em;}
 
     .logo{
     position: absolute;
@@ -188,14 +207,14 @@ footer{
     }
 
 
-    main{ padding: 0 20%; }
+    main{ padding: 0 10%; }
 
     .paper{
-        margin: 0;
-        height: 400px;
-        width: 51%;
-        position: relative;
-        top: 57px
+    margin: 0;
+    height: 478px;
+    width: 51%;
+    position: relative;
+    top: 47px
     }
 
     form{ gap: 12px; }
@@ -203,9 +222,12 @@ footer{
     input[type="text"],input[type="password"]{ font-size: 1em; }
 
     .btn{
-        flex-direction: row;
-        align-items: center;
+    flex-direction: row;
+    align-items: center;
     }
+
+
+    label{ font-size: 1em;}
 
     input[type="button"]{font-size: 1em; }
 
